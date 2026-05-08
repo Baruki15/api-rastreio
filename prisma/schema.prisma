@@ -13,7 +13,7 @@ datasource db {
 model Delivery {
   id              Int      @id @default(autoincrement())
   trackingNumber  String @unique
-  service         String
+  service         String?
   status          String
 
   createdAt       DateTime @default(now())
